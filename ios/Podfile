@@ -1,0 +1,15 @@
+# variables
+IOS_PLATFORM = '9.0'
+
+# settings
+use_frameworks!
+
+# dependencies
+def shared_pods
+  pod 'pdfium', :path => 'PDFiumTest/lib'
+end
+
+target 'PDFiumTest' do
+  platform :ios, IOS_PLATFORM
+  shared_pods
+end
