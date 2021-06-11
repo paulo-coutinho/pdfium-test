@@ -14,12 +14,12 @@
 		3AD36915266EA5CD00C65180 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AD36914266EA5CD00C65180 /* Assets.xcassets */; };
 		3AD36918266EA5CD00C65180 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AD36916266EA5CD00C65180 /* LaunchScreen.storyboard */; };
 		3AD36925266EA6F100C65180 /* PDFiumLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD36923266EA6F100C65180 /* PDFiumLib.m */; };
-		3AD36928266EA7A600C65180 /* libpdfium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD36927266EA78B00C65180 /* libpdfium.a */; };
-		3AD3692A266EA8D700C65180 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD36929266EA8CF00C65180 /* libc++.tbd */; };
 		3AD3692D266EA9C100C65180 /* demo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3AD3692C266EA9C100C65180 /* demo.pdf */; };
+		6EFB96D5F8813FE8A9EC23BB /* Pods_PDFiumTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31B80F4F00AB86A351105B5A /* Pods_PDFiumTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31B80F4F00AB86A351105B5A /* Pods_PDFiumTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PDFiumTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AD36908266EA5CB00C65180 /* PDFiumTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFiumTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AD3690B266EA5CB00C65180 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AD3690D266EA5CB00C65180 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +34,8 @@
 		3AD36927266EA78B00C65180 /* libpdfium.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpdfium.a; path = PDFiumTest/lib/lib/libpdfium.a; sourceTree = "<group>"; };
 		3AD36929266EA8CF00C65180 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		3AD3692C266EA9C100C65180 /* demo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = demo.pdf; sourceTree = "<group>"; };
+		D4D315BC7611E5BD47C33FCA /* Pods-PDFiumTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDFiumTest.debug.xcconfig"; path = "Target Support Files/Pods-PDFiumTest/Pods-PDFiumTest.debug.xcconfig"; sourceTree = "<group>"; };
+		D79E41F77F567ED1EC43AA84 /* Pods-PDFiumTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDFiumTest.release.xcconfig"; path = "Target Support Files/Pods-PDFiumTest/Pods-PDFiumTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,8 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AD3692A266EA8D700C65180 /* libc++.tbd in Frameworks */,
-				3AD36928266EA7A600C65180 /* libpdfium.a in Frameworks */,
+				6EFB96D5F8813FE8A9EC23BB /* Pods_PDFiumTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +56,7 @@
 				3AD3690A266EA5CB00C65180 /* PDFiumTest */,
 				3AD36909266EA5CB00C65180 /* Products */,
 				3AD36926266EA78B00C65180 /* Frameworks */,
+				6A2A0755E72D28637059B06A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +99,7 @@
 			children = (
 				3AD36929266EA8CF00C65180 /* libc++.tbd */,
 				3AD36927266EA78B00C65180 /* libpdfium.a */,
+				31B80F4F00AB86A351105B5A /* Pods_PDFiumTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -109,6 +112,16 @@
 			path = files;
 			sourceTree = "<group>";
 		};
+		6A2A0755E72D28637059B06A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4D315BC7611E5BD47C33FCA /* Pods-PDFiumTest.debug.xcconfig */,
+				D79E41F77F567ED1EC43AA84 /* Pods-PDFiumTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -116,6 +129,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AD3691C266EA5CD00C65180 /* Build configuration list for PBXNativeTarget "PDFiumTest" */;
 			buildPhases = (
+				5B6548ECEB09CD7ACD312687 /* [CP] Check Pods Manifest.lock */,
 				3AD36904266EA5CB00C65180 /* Sources */,
 				3AD36905266EA5CB00C65180 /* Frameworks */,
 				3AD36906266EA5CB00C65180 /* Resources */,
@@ -175,6 +189,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5B6548ECEB09CD7ACD312687 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PDFiumTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3AD36904266EA5CB00C65180 /* Sources */ = {
@@ -328,6 +367,7 @@
 		};
 		3AD3691D266EA5CD00C65180 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4D315BC7611E5BD47C33FCA /* Pods-PDFiumTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -356,6 +396,7 @@
 		};
 		3AD3691E266EA5CD00C65180 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D79E41F77F567ED1EC43AA84 /* Pods-PDFiumTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

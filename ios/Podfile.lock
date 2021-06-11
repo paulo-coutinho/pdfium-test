@@ -1,0 +1,16 @@
+PODS:
+  - pdfium (1.0.0)
+
+DEPENDENCIES:
+  - pdfium (from `PDFiumTest/lib`)
+
+EXTERNAL SOURCES:
+  pdfium:
+    :path: PDFiumTest/lib
+
+SPEC CHECKSUMS:
+  pdfium: 52c808a02f86f484c70e02be931e6091ec80876d
+
+PODFILE CHECKSUM: 370013dfb0ce79f4c9aa931345040a47fce4176b
+
+COCOAPODS: 1.10.1
